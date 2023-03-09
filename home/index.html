@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../index.js"></script>
+    <title>XM-Trading Point</title>
+</head>
+<body>
+
+    <!-- header-area -->
+    <div class="section__one" >
+        <nav class="navbar">
+            <div class="header__logo">
+               <a href=""> <img src="../assets/icons/Page1.png" alt="logo" id="XM_Logo"> </a>
+            </div>
+            <ul class="nav__links">
+                <li> <a href="#" >XM Homepage</a> </li>
+                <li> <a href="#" >Support</a> </li>
+            </ul>
+        </nav>
+        <div class="container__one">
+            <div class="content__container">
+                <p class="par_trade" >TRADE WITH</p>
+                <p class="heading__one" ><span>Zero Swaps</span> on All XM Ultra Low Accounts for more than 25 instruments!</p>
+                <p class="par_pips">Enjoy spreads as low as 0.6 pips and leverage up to 1000:1 on instruments like EURUSD, USDJPY, EURJPY, GBPUSD, and Gold.</p>
+                <button id="submit-button" type="button" >OPEN ACCOUNT</button>
+                <p class="par_newUser">New to trading? Try a <a href="#" >Demo account.</a></p>
+                <p class="par_conditions">Terms and Conditions apply<span>*</span>. To read the full T&Cs, <a href="#">click here.</a> </p>
+            </div>
+        </div>
+    </div>
+    <div class="section-two">
+        <div class="pricing">
+            <div class="currencies bitcoin"  >
+                <img src="/assets/icons/bitcoin1.png" alt="">
+                <h2></h2>
+            </div>
+            <div class="currencies ethurium" id="ethurium" >
+                <!-- <img src="../assets/icons/eth.png" alt=""> -->
+            </div>
+            <div class="currencies ripple" id="ripple" >
+                <img src="../assets/icons/ripple.png" alt="">
+            </div>
+            <div class="currencies litecoin" id="litecoin" >
+                <img src="../assets/icons/litecoin.png" alt="">
+            </div>
+            <div class="currencies bitcoinCash" id="bitcoinCash" >
+                <img src="../assets/icons/bitcoincash.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section-three">
+        <div class="first-part">
+            <P class="title-1">Why <span>Trade</span> with XM</P>
+            <p class="line"></p>
+            <p class="info-1">We have been providing traders around the world with the same premium experience for over a decade. As an industry-leader, we know what the modern trader needs to be successful in the markets.</p>
+        </div>
+        <div class="second-part">
+            <div class="superior details">
+                <p class="second-part-title">Superior Trade Execution</p>
+                <p class="line"></p>
+                <p class="second-part-parg">99% of trades are executed in less than a second, with no requotes or rejections.</p>
+                <img src="../assets/icons/fast-execusion-icon.png" alt="">
+            </div>
+            <div class="competitive-pricing details">
+                <p class="second-part-title">Competitive Pricing</p>
+                <p class="line"></p>
+                <p class="second-part-parg">We offer some of the lowest spreads and we don’t charge commissions.</p>
+                <img src="../assets/icons/competitive-pricing-icon.png" alt="">
+            </div>
+            <div class="advanced-tech details">
+                <p class="second-part-title">Advanced Technology</p>
+                <p class="line"> </p>
+                <p class="second-part-parg">Trade on MT4 or MT5, with expert tools, across desktop, web and mobile.</p>
+                <img src="../assets/icons/tech-icon.png" alt="">
+            </div>
+            <div class="start details">
+                <p class="second-part-title">Start with $5</p>
+                <p class="line"></p>
+                <p class="second-part-parg">Start trading your preferred instruments with as little as a $5 minimum deposit.</p>
+                <img src="../assets/icons/dollar-icon.png" alt="">
+            </div>        
+        </div>
+    </div>
+    <div class="section-four">
+        <div class="reg-container">
+            <div class="registration-form">
+                <h1>- Register Here -</h1>
+                <p>Join us to celebrate our biggest night of the year.</p>
+            </div>
+
+            <div class="time-place-information">
+                <div class="calendar-information inner-containers">
+                    <i class="fa fa-solid fa-calendar-check" style='font-size:28px'></i>
+                    <p>12 NOVEMBER 2022</p>
+                </div>
+                <div class="clock-information inner-containers">
+                    <i class="fa fa-solid fa-clock" style='font-size:28px'></i>
+                    <p>16:00 – 23:00</p>
+                </div>
+                <div class="location-information inner-containers">
+                    <i class='fas fa-map-marker-alt' style='font-size:28px'></i>
+                    <p>Centara Grand & Bangkok Convention Centre, Bangkok</p>
+                </div>
+            </div>
+
+            <div class="reg-form">
+                <div class="email-label">
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="password-label">
+                    <label for="psw"><b>Password:</b></label>
+                    <input type="password" id="psw" required>
+                    
+                    <div id="password-requirements" style="display: none;" >
+                        <p>8 - 15 characters<span id="length-requirement"></span></p><br> 
+                        <p>1 or more lower case letters<span id="lowercase-requirement"></span></p><br>
+                        <p>1 or more upper case letters<span id="uppercase-requirement"></span></p><br>
+                        <p>1 or more numbers<span id="number-requirement"></span></p><br>
+                        <p>1 or more special characters (#[]()@$&*!?|,.^/\+_-)<span id="special-requirement"></span></p><br>
+                    </div>
+                </div>
+
+            </div>
+            <div id="success-message" style="display: none;" >
+                <div class="reg-success">
+                    <i class="fa fa-check-circle success-icons" style="font-size:52px"></i>
+                    <h1 >Registration Successful</h1>
+                </div>
+                <i class="fa fa-solid fa-caret-right success-icons">Thank you for registering for our event with XM. You will receive an email shortly with confirmation of your registration.</i>
+            </div>
+            <div class="reg-terms">
+                <button id="submit-button" >register now</button>
+                <p>Don’t have an account? <a href="#">Create one here</a> and register for the event</p>
+                <p class="terms-conditions" >Terms and Conditions apply*. To read the full T&Cs, click <a href="#"> here </a>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="event-gallery">
+        <h3>Event Gallery</h3>
+        <div class="slider">
+            <i class="fa fa-angle-left" style="font-size:36px"></i>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <i class="fa fa-angle-right" style="font-size:36px"></i>
+        </div>
+    </div>
+    <div class="bigFair">
+        <div class="innerBigFair">
+            <div class="big-fair-title">
+                <h1>Big<span>.</span></h1> 
+                   <h1>Fair<span>.</span></h1> 
+                    <h1 class="move">Human<span>.</span></h1>
+                <p>Learn why over 5 million clients choose XM as their trusted online broker.</p>
+            </div>
+            <div class="big-fair-content">
+                <div>
+                    <!-- <img src="../assets/icons/Frame.png" alt=""> -->
+                    <h5>Authorised and Regulated</h5>
+                    <p>At XM, we adhere to all regulatory standards and are fully authorised and regulated by FSC.</p>
+                </div>
+                <div>
+                    <h5>Committed and Fair</h5>
+                    <p>We operate with complete transparency and adhere to the highest professional and ethical standards.</p>
+                </div>
+                <div>
+                    <h5>Multi-Award-Winning</h5>
+                    <p>Over the years we have received over 40 awards for the quality of our products and services.</p>
+                </div>
+                <div>
+                    <h5>24/7 Support</h5>
+                    <p>Our support agents are on hand 24/7 to answer your questions or assist you with any issues.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="footer-partners">
+                <img src="../assets/icons/meta.png" alt="">
+                <img src="../assets/icons/verisign.png" alt="">
+                <img src="../assets/icons/unicef.png" alt="">
+                <img src="../assets/icons/investors.png" alt="">
+            </div>
+            <div class="footer-socials">
+                <p>Follow us on</p>
+                <a href="https://www.xm.com/goto/facebook"><i class="fa fa-brands fa-facebook-f"></i></a> 
+                <a href="https://www.xm.com/goto/twitter"><i class="fa fa-brands fa-twitter"></i></a> 
+                <a href="https://www.xm.com/goto/youtube"><i class="fa fa-brands fa-youtube"></i></a> 
+                <a href="https://www.xm.com/goto/instagram"><i class="fa fa-brands fa-instagram"></i></a> 
+                <a href="https://www.xm.com/goto/linkedin"><i class="fa fa-brands fa-linkedin"></i></a> 
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href=""><p>Privacy Policy</p></a> 
+                <a href="" class="footer-cookiePolicy" ><p>Cookie Policy</p></a>
+                <a href=""><p>Terms and Conditions</p></a>
+            </div>
+            <div class="footer-endLogo">
+                <img src="../assets/icons/tradingpoint.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

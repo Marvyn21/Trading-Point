@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./form.css">
+    <title>Fill Form</title>
+</head>
+<body>
+    <div class="registration-form">
+        <div class="email-label">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="password-label">
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" id="psw" required>
+            
+            <div id="password-requirements" style="display: none;" >
+                <p>8 - 15 characters<span id="length-requirement"></span></p><br> 
+                <p>1 or more lower case letters<span id="lowercase-requirement"></span></p><br>
+                <p>1 or more upper case letters<span id="uppercase-requirement"></span></p><br>
+                <p>1 or more numbers<span id="number-requirement"></span></p><br>
+                <p>1 or more special characters (#[]()@$&*!?|,.^/\+_-)<span id="special-requirement"></span></p><br>
+            </div>
+        </div>
+    <div id="success-message" style="display: none;" >
+        <div class="reg-success">
+            <i class="fa fa-check-circle success-icons" style="font-size:52px"></i>
+            <h1 >Registration Successful</h1>
+        </div>
+        <i class="fa fa-solid fa-caret-right success-icons">Thank you for registering for our event with XM. You will receive an email shortly with confirmation of your registration.</i>
+    </div>
+    <div class="reg-terms">
+        <button>register now</button>
+        <p>Don’t have an account? <a href="#">Create one here</a> and register for the event</p>
+        <p class="terms-conditions" >Terms and Conditions apply*. To read the full T&Cs, click <a href="#"> here </a>.</p>
+    </div>
+    </div> 
+</body>
+</html>
