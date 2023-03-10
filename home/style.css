@@ -334,21 +334,17 @@
     line-height: 22px;
 }
 .section-four{
-    
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #201D27;;
     color: #FFFFFF;
     height: 1000px;
-    border-top: 400px;
 }
 
 .reg-container{
     /* height: 2200px; */
-    flex-basis: 100%;
     width: 85%;
     /* border: 2px solid red; */
 }
@@ -375,7 +371,7 @@
     align-items: center;
     justify-content: space-between;
     width: 75%;
-    /* height: 120px; */
+    height: 120px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 75px;
@@ -386,7 +382,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: auto;
+    height: 100%;
     border: 1px solid #FFFFFF;
 }
 
@@ -440,6 +436,7 @@
 .email-label{
     float: right;
     margin-right: 20px;
+    margin-bottom: 0px;
 }
 /* 
 .password-label{
@@ -756,7 +753,7 @@ button:hover{
         margin-left: 20px;
     }
     .section-four {
-        height: 800px;
+        position: relative;
       }
       
       .section-four h1 {
@@ -767,6 +764,30 @@ button:hover{
         font-size: 14px;
         line-height: 20px;
       }
+      .reg-form{
+        width: 100%;
+        overflow: hidden;
+      }
+      .reg-form label{
+        display: block;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+      }
+
+      /* EVENT-GALLERY */
+
+      .slider div{
+        width: 125px;
+        height: 125px;
+        background-color: #DADADA;
+        border: 4px solid white;
+        outline: 0.5px solid #CDCDCD;
+    }
+
+      .slider > #hide{
+        display: none;
+      }
 
     /* FOOTER */
     .footer .footer-top{
@@ -774,9 +795,41 @@ button:hover{
     }
     .footer .footer-bottom{
         display: flex;
-        justify-content: center;
-        max-width: 100%;
-        margin: 0;
+        align-items: center;
+        /* text-align: center; */
+        justify-content: space-between;
+        /* max-width: 100%; */
+        margin: 0 auto;
         padding: 20px;
+        height: 100%;
+    }
+    .footer-links{
+        width: 50%;
+        height: 18px;
+    }
+    .footer-links > .footer-cookiePolicy{
+        border-left: 1px solid #888888;
+        border-right: 1px solid #888888;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .big-fair-title h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    body{
+        height: 100vh;
+        width: 360px;
+    }
+    .section__one{
+        width: 100%;
+    }
+    .container__one{
+        width: 360px;
+    }
+    .content__container{
+        position: relative;
     }
 }

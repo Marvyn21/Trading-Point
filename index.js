@@ -1,55 +1,22 @@
 // fetch data from the api to dislay on the page
-const apiUrl = 'https://api.coinlore.net/api/tickers/';
-const ethusriumDiv = document.getElementById('ethurium'); 
-const rippleDiv = document.getElementById('ripple'); 
-const litecoinDiv = document.getElementById('litecoin'); 
-const bitcoinCashDiv = document.getElementById('bitcoinCash'); 
+const coins = ['bitcoin', 'ethereum', 'ripple', 'litecoin', 'bitcoincash'];
 
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-
-    data.data.forEach(coin => {
-        const symbol = coin.symbol;
-        const name = coin.name;
-        const priceUsd = coin.price_usd;
-        const percentChange24h = coin.percent_change_24h;
-
-        const bitcoinDiv = document.getElementById('bitcoin')
-
-        const symbolCell = document.createElement('h2');
-        symbolCell.textContent = name;
-        bitcoinDiv.appendChild(symbolCell)
-
-    // function displayCrypto(cryptoData){
-    //     const cryptoDetails = cryptoData.data[0];
-    //     const bitcoinDiv = document.getElementById('bitcoin')
-    
-    //     const cryptoSymbol = cryptoDetails.symbol;
-    //     const symbolTag = document.createElement("h2");
-    //     symbolTag.innerHTML = cryptoSymbol;
-    //     bitcoinDiv.appendChild(symbolTag);
-        
-    // }
-
-
-//     const html = `
-//     <h2>${data.symbol}</h2>
-//     <p>${data.name}</p>
-//   `;
-//   bitcoinDiv.innerHTML += html;
-//   ethuriumDiv .innerHTML += html;
-//   rippleDiv.innerHTML += html;
-//   litecoinDiv.innerHTML += html;
-//   bitcoinCashDiv.innerHTML += html;
-    // do something with the data, e.g. display it on the page
-  })
-  .catch(error => {
-    console.error(error);
-  });
-
-
+coins.forEach(coin => {
+  fetch('https://api.coinlore.net/api/tickers/')
+    .then(response => response.json())
+    .then(data => {
+      if(this.coin === undefined) {return}
+      const cryptoDiv = document.getElementById('crypto');
+      const symbol = data[1].symbol;
+      const name = data[2].name;
+      const priceUsd = data[5].price_usd;
+      const percentChange24h = data[6].percent_change_24h;
+      const coinDiv = document.createElement('div');
+      coinDiv.innerHTML = `${symbol} - ${name}: $${priceUsd} (${percentChange24h}%)`;
+      cryptoDiv.appendChild(coinDiv);
+    })
+    .catch(error => console.error(error));
+});
 
 
 
